@@ -28,9 +28,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Hello-Microverse] <a name="about-project"></a>
+# 📖 [Portfolio Website] <a name="about-project"></a>
 
-**[Hello-Microverse]** This is a Portfolio website that was develop with HTML5 AND CSS3. It gives the position of the portfolio holder, brief introduction, skills, 
+**[Portfolio Website]** This is a Portfolio website that was develop with HTML5 AND CSS3. It gives the position of the portfolio holder, brief introduction, skills, 
 Experince, Education, Services, the portfolio holders works gone, contact information, a link to download CV, and career Achievement.
 
 ## 🛠 Built With <a name="built-with"></a>
