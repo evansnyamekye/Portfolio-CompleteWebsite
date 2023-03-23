@@ -30,8 +30,7 @@
 
 # 📖 [Portfolio Website] <a name="about-project"></a>
 
-**[Portfolio Website]** This is a Portfolio website that was develop with HTML5 AND CSS3. It gives the position of the portfolio holder, brief introduction, skills, 
-Experince, Education, Services, the portfolio holders works gone, contact information, a link to download CV, and career Achievement.
+**[Portfolio Website]** This is a Portfolio website that was developed with HTML5 AND CSS3. It gives the position of the portfolio holder, brief introduction, skills, experience, education, services, the portfolio holder's work, contact information, a link to download a CV, and Career Achievement.
 
 ## 🛠 Built With <a name="built-with"></a>
 - HTML5
