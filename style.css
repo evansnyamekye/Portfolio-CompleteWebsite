@@ -7,6 +7,7 @@
 }
 
 @media (max-width: 375px) {
+
   /* ------- Header Section Container (Header-bg-Mobile) --------- */
   .header {
     position: absolute;
@@ -28,7 +29,6 @@
   }
 
   /* ------------ Header text Mobile (header-bg) ------ */
-
   .header-text {
     position: absolute;
     top: 12%;
@@ -60,7 +60,6 @@
   }
 
   /* ---------- social media Icons --------- */
-
   .social-media-icons {
     display: flex;
     margin-top: 12px;
@@ -77,18 +76,17 @@
 
   .card_works {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: left;
     padding: 15px 15px;
     gap: 12px;
-    background: #ffffff;
+    background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     width: 310px;
     height: 545px;
     flex: none;
     order: 0;
-    flex-flow: 0;
     margin: 16px;
     margin-top: 114px;
   }
@@ -104,7 +102,6 @@
     color: #172b4d;
     font: none;
     order: 0;
-    flex-grow: 0;
   }
 
   .languages_list {
@@ -207,20 +204,19 @@
     gap: 12px;
     margin-top: 28px;
   }
+
   /* ------- Header Section Container (Header-bg-Mobile) --------- */
   .about {
     position: absolute;
     width: 375px;
     height: 718px;
-    margin-top: 20px;
     background: white;
     background-repeat: no-repeat;
     margin-top: 114px;
   }
 
   /* ------------ Header text Mobile (header-bg) ------ */
-
-  .header-text {
+  .header-text1 {
     position: absolute;
     top: 12%;
     left: 6.4%;
@@ -251,7 +247,6 @@
   }
 
   /* --------------- Start of Skill set -----------  */
-
   .skill_set {
     display: flex;
     flex-direction: column;
@@ -273,7 +268,7 @@
     display: flex;
     align-items: left;
     margin-top: 24px;
-    color: #000000;
+    color: #000;
   }
 
   .down_arrow {
@@ -300,7 +295,6 @@
     background: #f7f7f9;
     border-radius: 8px;
     flex: none;
-    flex-grow: 0;
     margin-left: 8px;
   }
 
@@ -330,7 +324,6 @@
     background: #f7f7f9;
     border-radius: 8px;
     flex: none;
-    flex-grow: 0;
     margin-left: 8px;
   }
 
@@ -360,7 +353,6 @@
     background: #f7f7f9;
     border-radius: 8px;
     flex: none;
-    flex-grow: 0;
     margin-left: 8px;
   }
 
@@ -383,6 +375,7 @@
     align-items: center;
     color: #253858;
   }
+
   /* ------------- Start of Framworks ----------- */
   #frameworks {
     width: 327px;
@@ -396,7 +389,6 @@
     height: 24px;
     left: 50px;
     right: 78px;
-    margin-top: -1px;
     font-size: 20px;
     line-height: 24px;
     display: flex;
