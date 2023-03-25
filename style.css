@@ -276,15 +276,15 @@
     color: #000000;
   }
 
-  .down_arrow{
-    position: absolute; 
+  .down_arrow {
+    position: absolute;
     margin-top: 10px;
     margin-right: 70px;
     margin-left: 200px;
-    color: #5E6C84; 
+    color: #5e6c84;
   }
 
-  .language_list_container{
+  .language_list_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -294,25 +294,25 @@
     height: 248.15px;
   }
 
-   .javascrip_1{
+  .javascrip_1 {
     width: 330px;
     height: 66.72px;
     background: #f7f7f9;
     border-radius: 8px;
-    flex: none; 
+    flex: none;
     flex-grow: 0;
     margin-left: 8px;
-   } 
+  }
 
-   .js_arrow{
-    display: flex; 
+  .js_arrow {
+    display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 8px;
     margin-left: 10px;
-   } 
+  }
 
-   .javascript_text{
+  .javascript_text {
     position: absolute;
     height: 24px;
     margin-left: 70px;
@@ -322,27 +322,27 @@
     display: flex;
     align-items: center;
     color: #253858;
-   } 
+  }
 
-   .html_1{
+  .html_1 {
     width: 330px;
     height: 66.72px;
     background: #f7f7f9;
     border-radius: 8px;
-    flex: none; 
+    flex: none;
     flex-grow: 0;
     margin-left: 8px;
-   }  
+  }
 
-   .html_arrow{
-    display: flex; 
+  .html_arrow {
+    display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 8px;
     margin-left: 10px;
-   }
+  }
 
-   .html_text{
+  .html_text {
     position: absolute;
     height: 24px;
     margin-left: 70px;
@@ -352,27 +352,27 @@
     display: flex;
     align-items: center;
     color: #253858;
-   }
+  }
 
-   .css_1{
+  .css_1 {
     width: 330px;
     height: 66.72px;
     background: #f7f7f9;
     border-radius: 8px;
-    flex: none; 
+    flex: none;
     flex-grow: 0;
     margin-left: 8px;
-   } 
- 
-   .css_arrow{
-    display: flex; 
+  }
+
+  .css_arrow {
+    display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 8px;
     margin-left: 10px;
-   }
+  }
 
-   .css_text{
+  .css_text {
     position: absolute;
     height: 24px;
     margin-left: 70px;
@@ -382,16 +382,16 @@
     display: flex;
     align-items: center;
     color: #253858;
-   }
-/* ------------- Start of Framworks ----------- */
-   #frameworks{
+  }
+  /* ------------- Start of Framworks ----------- */
+  #frameworks {
     width: 327px;
     height: 72px;
     list-style-type: none;
     margin-bottom: 20px;
-   }
+  }
 
-   .frameworks_text{
+  .frameworks_text {
     position: absolute;
     height: 24px;
     left: 50px;
@@ -401,23 +401,22 @@
     line-height: 24px;
     display: flex;
     align-items: center;
-    color: #000; 
+    color: #000;
     margin-top: 5px;
-   } 
+  }
 
-   .right_arrow{
+  .right_arrow {
     margin-top: 3px;
     margin-left: 275px;
-    color: #5E6C84;
-   } */
-
-   #skill{
+    color: #5e6c84;
+  }
+  */ #skill {
     width: 327px;
     height: 72px;
     list-style-type: none;
-   } 
+  }
 
-   .skill_text{
+  .skill_text {
     position: absolute;
     height: 24px;
     left: 50px;
@@ -427,13 +426,12 @@
     line-height: 24px;
     display: flex;
     align-items: center;
-    color: #000; 
-   } 
+    color: #000;
+  }
 
-   .right_arrow{
+  .right_arrow {
     margin-top: 3px;
     margin-left: 275px;
-    color: #5E6C84;
-   } 
-
+    color: #5e6c84;
+  }
 }
