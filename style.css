@@ -7,7 +7,6 @@
 }
 
 @media (max-width: 375px) {
-
   /* ------- Header Section Container (Header-bg-Mobile) --------- */
   .header {
     position: absolute;
@@ -76,7 +75,7 @@
 
   .card_works {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: left;
     padding: 15px 15px;
     gap: 12px;
@@ -99,8 +98,6 @@
     font-size: 32px;
     line-height: 44px;
     color: #172b4d;
-    font: none;
-    order: 0;
   }
 
   .languages_list {
@@ -171,7 +168,6 @@
     width: 125px;
     height: 50px;
     line-height: 24px;
-    text-align: center;
     letter-spacing: 0.03em;
     flex-direction: column;
     align-items: center;
@@ -193,7 +189,6 @@
     width: 170px;
     height: 50px;
     line-height: 24px;
-    text-align: center;
     letter-spacing: 0.03em;
     flex-direction: column;
     align-items: center;
@@ -399,7 +394,7 @@
     color: #5e6c84;
   }
 
-   #skill {
+  #skill {
     width: 327px;
     height: 72px;
     list-style-type: none;
