@@ -14,10 +14,11 @@
     height: 718px;
     margin-top: 20px;
     background-image: url(images/bg/header-shapes\ mobile.png);
+    background-repeat: no-repeat;
   }
 
-  /* --------- Nav Container -------- */
-  .nav {
+  /* --------- Header Container -------- */
+  header {
     display: flex;
     justify-content: space-between;
     padding: 2% 8%;
