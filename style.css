@@ -307,11 +307,11 @@ header {
   color: #000;
 }
 
-.language-text{
+.language-text {
   height: 24px;
   left: 12px;
   right: 78px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: none;
   font-weight: 500;
   font-size: 20px;
@@ -477,6 +477,6 @@ header {
   margin-top: 3px;
   margin-left: 275px;
   color: #5e6c84;
-  
+
 }
 
