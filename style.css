@@ -253,13 +253,13 @@ header {
   margin-top: 28px;
 }
 
-.get_resume:hover {
-  background-color: #6070ff;
+.get_resume:active {
+  background-color: #2230d2;
   color: #fff;
 }
 
-.get_resume:active {
-  background-color: #2230d2;
+.get_resume:hover {
+  background-color: #6070ff;
   color: #fff;
 }
 
