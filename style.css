@@ -34,7 +34,6 @@ header {
   align-items: left;
   width: 85.99%;
   height: 48px;
-  margin-left: 0px;
   margin-right: 10px;
   margin-top: -2px;
   padding: 26px;
@@ -484,7 +483,6 @@ header {
   display: flex;
   align-items: center;
   font-weight: 500;
-  display: flex;
   color: #000;
   margin-top: 50px;
   margin-left: -25px;
@@ -504,7 +502,6 @@ header {
 
 .skill_text {
   position: absolute;
-  height: 24px;
   left: 50px;
   right: 78px;
   font-size: 20px;
@@ -512,7 +509,6 @@ header {
   display: flex;
   align-items: center;
   font-weight: 500;
-  display: flex;
   color: #000;
   margin-top: 15px;
   margin-left: -25px;
