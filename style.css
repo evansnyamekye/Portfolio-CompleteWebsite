@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 21.6%;
+  width: 100%;
   height: 38.88rem;
   background-color: #fff;
   background-image: url(images/bg/header-shapes\ mobile.png);
@@ -32,9 +32,10 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: left;
-  width: 18.35%;
+  width: 85.99%;
   height: 48px;
-  margin-left: 4px;
+  margin-left: 0px;
+  margin-right: 10px;
   margin-top: -2px;
   padding: 26px;
 }
@@ -102,6 +103,15 @@ header {
   gap: -10px;
 }
 
+.twitter:hover,
+.linkedin:hover,
+.git:hover,
+.medium:hover,
+.angle:hover {
+  color: #505f79;
+  opacity: 0.5;
+}
+
 /* ------------- Portfolio work Cards -------------- */
 .works_container {
   background: #e5e5e5;
@@ -117,7 +127,7 @@ header {
   padding: 15px 15px;
   gap: 12px;
   background: #fff;
-  border: 1px solid #dfe1e6;
+  border: 1.5px solid #dfe1e6;
   border-radius: 16px;
   width: 310px;
   height: 545px;
@@ -145,6 +155,16 @@ header {
   gap: 8px;
   width: 203px;
   height: 20px;
+}
+
+.see_button:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.see_button:active {
+  background-color: #6070ff;
+  color: #fff;
 }
 
 .html {
@@ -227,22 +247,33 @@ header {
   height: 50px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding: 10px;
   gap: 12px;
   margin-top: 28px;
 }
 
-/* ------- Header Section Container (Header-bg-Mobile) --------- */
+.get_resume:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.get_resume:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+/* ------- About Section Container  --------- */
 .about {
   position: absolute;
   width: 375px;
-  height: 115vh;
+  height: 1150px;
   background: white;
   background-repeat: no-repeat;
   margin-top: 114px;
   border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
 }
 
 /* ------------ Header text Mobile (header-bg) ------ */
@@ -279,8 +310,14 @@ header {
 .social-media-icons1 {
   display: flex;
   flex-direction: row;
-  margin-top: 8px;
-  gap: 20px;
+  justify-content: space-between;
+  flex: none;
+  flex-grow: 0;
+  width: 10.636rem;
+  margin-left: 15px;
+  margin-right: 0%;
+  margin-top: 10px;
+  gap: 10%;
 }
 
 /* --------------- Start of Skill set -----------  */
@@ -302,8 +339,7 @@ header {
   font-size: 20px;
   line-height: 24px;
   display: flex;
-  align-items: left;
-  margin-top: 24px;
+  align-items: center;
   color: #000;
 }
 
@@ -318,15 +354,16 @@ header {
   line-height: 24px;
   align-items: center;
   margin-left: -130px;
-  margin-right: 70px;
+  margin-right: 90px;
+  margin-top: 10%;
 }
 
 .down_arrow {
   position: absolute;
-  margin-top: 10px;
   margin-right: 70px;
-  margin-left: 200px;
+  margin-left: 320px;
   color: #5e6c84;
+  margin-top: 13%;
 }
 
 .language_list_container {
@@ -335,8 +372,11 @@ header {
   align-items: center;
   padding: 22px;
   gap: 12px;
-  width: 927px;
+  width: 327px;
   height: 248.15px;
+  flex: none;
+  flex-grow: 0;
+  padding-left: 12px;
 }
 
 .javascrip_1 {
@@ -440,17 +480,20 @@ header {
   left: 50px;
   right: 78px;
   font-size: 20px;
-  line-height: 24px;
+  height: 2px;
   display: flex;
   align-items: center;
+  font-weight: 500;
+  display: flex;
   color: #000;
-  margin-top: 5px;
+  margin-top: 50px;
+  margin-left: -25px;
 }
 
 .right_arrow1 {
-  margin-top: 3px;
   margin-left: 275px;
   color: #5e6c84;
+  margin-top: 12%;
 }
 
 #skill {
@@ -461,16 +504,18 @@ header {
 
 .skill_text {
   position: absolute;
-  font-family: "Poppins", sans-serif;
   height: 24px;
   left: 50px;
   right: 78px;
-  margin-top: -1px;
   font-size: 20px;
-  line-height: 24px;
+  height: 2px;
   display: flex;
   align-items: center;
+  font-weight: 500;
+  display: flex;
   color: #000;
+  margin-top: 15px;
+  margin-left: -25px;
 }
 
 .right_arrow {
