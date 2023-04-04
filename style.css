@@ -267,12 +267,13 @@ header {
 .about {
   position: absolute;
   width: 375px;
-  height: 1150px;
+  height: 1263px;
   background: white;
   background-repeat: no-repeat;
   margin-top: 114px;
   border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
+
+  /* border-bottom-left-radius: 60px; */
 }
 
 /* ------------ Header text Mobile (header-bg) ------ */
@@ -519,4 +520,121 @@ header {
   margin-top: 3px;
   margin-left: 275px;
   color: #5e6c84;
+}
+
+/* ----start of Contact form ----- */
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 375px;
+  height: 889px;
+  left: 0;
+  top: 1170px;
+  background: #6070ff;
+  background-image: url(images/bg/contact\ form\ shapes-mobile@2x.png);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  border-top-left-radius: 60px;
+  background-repeat: no-repeat;
+  background-size: 256px;
+  background-position: right;
+}
+
+.contact_container h1 {
+  padding-top: 142px;
+  padding-bottom: 12px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+  margin-top: -2px;
+}
+
+.contact_container p {
+  position: absolute;
+  width: 327px;
+  height: 137px;
+  left: 24px;
+  top: 402px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin-top: -50%;
+}
+
+form {
+  margin-top: 12.5rem;
+  margin-left: 21.5px;
+  color: #172b4d;
+}
+
+.contact_container input,
+.contact_container textarea {
+  width: 300px;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+.get_intouch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  position: absolute;
+  width: 142px;
+  height: 48px;
+  left: 22px;
+  top: 792px;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  border-style: none;
+}
+
+.get_intouch h5 {
+  width: 110px;
+  height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* -------- start of bar ------ */
+.home {
+  position: absolute;
+  width: 375px;
+  height: 34px;
+  left: calc(50% - 375px / 2);
+  bottom: 0;
+}
+
+.home_bar {
+  position: absolute;
+  width: 134px;
+  height: 5px;
+  left: calc(50% - 134px / 2 - 0.5px);
+  bottom: 8px;
+  background: #0d151e;
+  border-radius: 10px;
+  top: 817px;
 }
