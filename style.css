@@ -583,6 +583,7 @@ form {
   outline: none;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
+  color: #172b4d;
 }
 
 .get_intouch {
@@ -633,10 +634,6 @@ form {
   color: #172b4d;
 }
 
-.contact_container #email {
-  color: #172b4d;
-}
-
 #name::placeholder {
   color: #172b4d;
 }
@@ -647,6 +644,10 @@ form {
 
 #textarea::placeholder {
   color: #b3bac5;
+}
+
+.contact_container #email {
+  color: #172b4d;
 }
 
 /* -------- start of bar ------ */
