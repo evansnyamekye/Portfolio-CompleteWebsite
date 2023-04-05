@@ -581,7 +581,7 @@ form {
   padding: 15px;
   margin-bottom: 17px;
   outline: none;
-  border: 1px solid #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
 }
 
@@ -599,6 +599,7 @@ form {
   border-radius: 8px;
   cursor: pointer;
   border-style: none;
+  color: #6070ff;
 }
 
 .get_intouch h5 {
@@ -613,10 +614,39 @@ form {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #6070ff;
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.get_intouch:hover {
+  background-color: #6070ff;
+  color: white;
+}
+
+.get_intouch:active {
+  background-color: #2230d2;
+  color: white;
+}
+
+.contact_container #name {
+  color: #172b4d;
+}
+
+.contact_container #email {
+  color: #172b4d;
+}
+
+#name::placeholder {
+  color: #172b4d;
+}
+
+#email::placeholder {
+  color: #172b4d;
+}
+
+#textarea::placeholder {
+  color: #b3bac5;
 }
 
 /* -------- start of bar ------ */
