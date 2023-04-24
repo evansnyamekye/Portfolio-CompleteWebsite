@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -21,10 +22,11 @@ nav {
   position: absolute;
   width: 375px;
   height: 48px;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
   top: 0;
-  bottom: 0px;
+  bottom: 0;
+
   /* position: fixed; */
   z-index: 11;
 }
@@ -64,7 +66,7 @@ header {
 .header_container h1 {
   width: 327px;
   height: 150px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -80,7 +82,7 @@ header {
 .header_container p {
   width: 327px;
   height: 146px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -94,7 +96,7 @@ header {
 .header_container a {
   width: 217px;
   height: 24px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -149,7 +151,7 @@ header {
 .card_right h2 {
   width: 295px;
   height: 36px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -164,7 +166,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 236px;
   height: 32px;
@@ -176,7 +178,7 @@ header {
 .card_right p {
   width: 295px;
   height: 76px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -192,7 +194,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 8px;
   width: 214px;
   height: 24px;
@@ -200,12 +202,6 @@ header {
   flex: none;
   order: 2;
   flex-grow: 0;
-}
-
-.language_row ul li a {
-  color: #6070ff;
-  font-size: 12px;
-  font-weight: 500;
 }
 
 .html {
@@ -251,6 +247,24 @@ header {
 }
 
 /* See Project section */
+.see_button a {
+  width: 102px;
+  height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
 .see_button {
   box-sizing: border-box;
   display: flex;
@@ -266,24 +280,6 @@ header {
   background-color: #fff;
   border: 1px solid #6070ff;
   border-radius: 8px;
-}
-
-.see_button a {
-  width: 102px;
-  height: 24px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #396df2;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 /* --- About Section --- */
@@ -305,7 +301,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 327px;
   height: 346px;
@@ -315,10 +311,24 @@ header {
   flex-grow: 0;
 }
 
+.about_text a {
+  width: 127px;
+  height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
 .about_text h1 {
   width: 327px;
   height: 35px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -334,7 +344,7 @@ header {
 .about_text p {
   width: 327px;
   height: 147px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -345,36 +355,27 @@ header {
   flex-grow: 0;
 }
 
-.about_text a {
-  width: 127px;
+/* get resume section */
+
+.get_resume a {
+  width: 220px;
   height: 24px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
-  color: #7f8cff;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-}
-
-/* Social Media Section */
-.social_media {
+  margin-left: -2%;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  margin-left: 15px;
-  padding: 0px;
-  width: 200px;
-  height: 40px;
-  margin-top: 5px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
   flex: none;
-  order: 3;
+  order: 4;
   flex-grow: 0;
 }
 
-/* get resume section */
 .get_resume {
   box-sizing: border-box;
   display: flex;
@@ -391,31 +392,19 @@ header {
   border-radius: 8px;
 }
 
-.get_resume a {
-  width: 220px;
-  height: 24px;
-  font-family: "Poppins";
-  font-style: normal;
+.language_row ul li a {
+  color: #6070ff;
+  font-size: 12px;
   font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  margin-left: -2%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #396df2;
-  flex: none;
-  order: 4;
-  flex-grow: 0;
 }
+
 
 /* skill section */
 .skill_list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 327px;
   height: 464.15px;
   flex: none;
@@ -436,14 +425,14 @@ header {
   position: absolute;
   height: 24px;
   margin-left: 10px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   display: flex;
   align-items: center;
-  color: #000000;
+  color: #000;
 }
 
 .down_arrow {
@@ -495,7 +484,7 @@ header {
   position: absolute;
   height: 24px;
   left: 112px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -533,7 +522,7 @@ header {
   position: absolute;
   height: 24px;
   left: 112px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -571,7 +560,7 @@ header {
   position: absolute;
   height: 24px;
   left: 112px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -615,7 +604,7 @@ header {
   height: 1px;
   width: 327px;
   left: 20px;
-  right: 0px;
+  right: 0;
   margin-top: -25px;
   background: #dfe1e6;
 }
