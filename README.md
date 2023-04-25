@@ -20,7 +20,7 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -34,26 +34,27 @@
 Experince, Education, Services, the portfolio holders works gone, contact information, a link to download CV, and career Achievement.
 
 ## 🛠 Built With <a name="built-with"></a>
-- HTML5
-- CSS3
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="#">HTML5</a></li>
+     <li><a href="#">CSS3</a></li>
+  </ul>
+</details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
-
-- HTML5
-- CSS3
-- HTML5, CSS3 Linters
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- Fully responsive portfolio built with pure HTML & CSS
+- Specialized resposnive effects 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps:
 - Open your Terminal
@@ -102,11 +103,27 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+ 
+### Usage
+
+To run the project, execute the following command by clonning to your machine:
+
+
+Example command:
+
+```sh
+  git clone https://github.com/evansnyamekye/Portfolio-MobileFirst
+```
+
+
+### Run tests
+
+- No tests yet. 😊
+
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
@@ -120,7 +137,6 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[new_feature_1]** Background Color
 - [ ] **[new_feature_2]** More page Content
@@ -141,8 +157,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project give this repository a 5 star rating.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -151,7 +165,6 @@ If you like this project give this repository a 5 star rating.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank...
 - Microverse Review Team and specially nedjwab for professional review feedback
