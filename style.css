@@ -10,8 +10,8 @@
 /* Default font and bg color for website */
 body {
   font-family: "Poppins", sans-serif;
-  background: #e5e5e5;
-  width: 375px;
+  display: block;
+  background: #f7f7f9;
 }
 
 /* Nav-links on mobile: Off */
