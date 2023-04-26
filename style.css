@@ -11,6 +11,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background: #e5e5e5;
+  width: 375px;
 }
 
 /* Nav-links on mobile: Off */
@@ -132,16 +133,11 @@ header {
 
 /* Cards works container */
 .cards_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 33.333%;
   padding: 114px 24px;
-  gap: 88px;
-  position: absolute;
   width: 375px;
-  height: 2788px;
-  left: -1%;
-  top: 718px;
+  gap: 88px;
 }
 
 .card_works {
@@ -150,7 +146,7 @@ header {
   flex-direction: column;
   align-items: left;
   padding: 16px;
-  gap: 12px;
+  gap: 22px;
   width: 327px;
   height: 542px;
   background: #fff;
@@ -159,6 +155,10 @@ header {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.card_right {
+  margin-top: -10px;
 }
 
 .card_right h2 {
@@ -260,40 +260,36 @@ header {
   flex-grow: 0;
 }
 
-/* See Project section */
-.see_button a {
-  width: 102px;
-  height: 24px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #396df2;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
 .see_button {
-  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px;
   gap: 10px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
   position: absolute;
-  width: 126px;
-  height: 48px;
-  left: 64px;
-  margin-top: 22px;
+  width: 102px;
+  height: 24px;
+  left: 40px;
+  color: #396df2;
   background-color: #fff;
   border: 1px solid #6070ff;
   border-radius: 8px;
+}
+
+.see_button:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.see_button:hover {
+  background-color: #6070ff;
+  color: #fff;
 }
 
 /* --- About Section --- */
@@ -382,40 +378,37 @@ header {
   flex-grow: 0;
 }
 
-/* get resume section */
-.get_resume a {
-  width: 220px;
-  height: 24px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  margin-left: -2%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #396df2;
-  flex: none;
-  order: 4;
-  flex-grow: 0;
-}
-
 .get_resume {
-  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px;
   gap: 10px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
   position: absolute;
   width: 160px;
   height: 48px;
-  margin-top: 295px;
+  margin-top: 265px;
+  left: 28px;
+  color: #396df2;
   background-color: #fff;
   border: 1px solid #6070ff;
   border-radius: 8px;
+}
+
+.get_resume:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.get_resume:hover {
+  background-color: #6070ff;
+  color: #fff;
 }
 
 .language_row ul li a {
