@@ -43,10 +43,7 @@ header {
 
 /* .header container */
 .header {
-  position: relative;
-  top: 0;
   width: 375px;
-  height: 680px;
   background-color: #fff;
   background-image: url(images/bg/header-shapes\ mobile.png);
   background-repeat: no-repeat;
@@ -60,16 +57,11 @@ header {
   align-items: flex-start;
   padding: 114px 24px;
   gap: 12px;
-  position: absolute;
-  width: 375px;
-  height: 604px;
   left: calc(50% - 375px / 2);
-  top: 48px;
 }
 
 .header_container h1 {
   width: 327px;
-  height: 150px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -81,6 +73,8 @@ header {
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin: 3rem 0;
+  margin-bottom: 2%;
 }
 
 .header_container p {
@@ -136,7 +130,6 @@ header {
   display: grid;
   grid-template-columns: 33.333%;
   padding: 114px 24px;
-  width: 375px;
   gap: 88px;
 }
 
@@ -300,9 +293,9 @@ header {
   padding: 114px 24px;
   gap: 24px;
   position: absolute;
-  width: 335px;
+  width: 325px;
   height: 1062.15px;
-  top: 3395px;
+  top: 3330px;
   background: #fff;
   border-top-right-radius: 60px;
 }
@@ -363,6 +356,7 @@ header {
   flex: none;
   order: 1;
   flex-grow: 0;
+  margin-top: -10px;
 }
 
 .social_media_icons {
@@ -372,7 +366,7 @@ header {
   padding: 0;
   width: 200px;
   height: 40px;
-  margin-top: 5px;
+  margin-top: 10px;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -394,7 +388,7 @@ header {
   width: 160px;
   height: 48px;
   margin-top: 265px;
-  left: 28px;
+  left: 24px;
   color: #396df2;
   background-color: #fff;
   border: 1px solid #6070ff;
@@ -436,7 +430,7 @@ header {
   width: 327px;
   height: 72px;
   left: 55%;
-  margin-top: 15px;
+  margin-top: 10%;
 }
 
 .language p {
@@ -469,7 +463,7 @@ header {
   gap: 12px;
   width: 327px;
   height: 248.15px;
-  margin-top: -23px;
+  margin-top: 15%;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -596,7 +590,7 @@ header {
 #frameworks {
   width: 327px;
   height: 72px;
-  margin-top: -12px;
+  margin-top: -28px;
   flex: none;
   order: 1;
   flex-grow: 0;
