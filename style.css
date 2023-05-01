@@ -12,7 +12,6 @@ body {
   font-family: "Poppins", sans-serif;
   display: block;
   background: #f7f7f9;
-  width: 375px;
 }
 
 /* Nav-links on mobile: Off */
@@ -293,6 +292,8 @@ header {
   align-items: center;
   padding: 114px 24px;
   gap: 24px;
+  position: absolute;
+  width: 325px;
   height: 1062.15px;
   top: 3330px;
   background: #fff;
@@ -384,7 +385,7 @@ header {
   font-size: 17px;
   line-height: 24px;
   position: absolute;
-  width: 160px;
+  width: 90px;
   height: 48px;
   margin-top: 265px;
   left: 24px;
@@ -625,11 +626,12 @@ header {
 
 /* Contact Section */
 .contact_container {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
   width: 375px;
   height: 784px;
   left: 0;
-  top: 4470px;
+  top: 5410px;
   background: #6070ff;
   background-image: url(images/bg/contact\ form\ shapes-mobile@2x.png);
   transform: matrix(1, 0, 0, 1, 0, 0);
@@ -650,22 +652,23 @@ header {
   text-align: center;
   color: #fff;
   margin-top: -6%;
+  order: 0;
 }
 
 .contact_container p {
-  position: absolute;
-  width: 327px;
-  height: 137px;
-  left: 24px;
-  top: 402px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 320px;
+  margin-left: 25px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  text-align: center;
   color: #ebebff;
-  margin-top: -55%;
+  margin-top: -160%;
+  order: 1;
 }
 
 form {
@@ -686,10 +689,10 @@ form {
 }
 
 .get_intouch {
+  display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px 16px;
-  position: absolute;
   width: 142px;
   height: 48px;
   left: 21px;
@@ -702,8 +705,6 @@ form {
 }
 
 .get_intouch h5 {
-  width: 110px;
-  height: 24px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -753,19 +754,16 @@ form {
 
 /* -------- Home bar (=======) ------ */
 .home {
-  position: absolute;
+  display: flex;
+  justify-content: center;
   height: 34px;
-  left: calc(50% - 375px / 2);
-  bottom: 0;
 }
 
 .home_bar {
-  position: absolute;
   width: 134px;
   height: 5px;
   left: 110px;
-  bottom: 8px;
   background: #0d151e;
   border-radius: 10px;
-  top: 22px;
+  margin-top: 7.7%;
 }
