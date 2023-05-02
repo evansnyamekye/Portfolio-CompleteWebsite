@@ -10,7 +10,6 @@
 /* Default font and bg color for website */
 body {
   font-family: "Poppins", sans-serif;
-  display: block;
   background: #f7f7f9;
 }
 
@@ -631,7 +630,6 @@ header {
   width: 375px;
   height: 784px;
   left: 0;
-  top: 5410px;
   background: #6070ff;
   background-image: url(images/bg/contact\ form\ shapes-mobile@2x.png);
   transform: matrix(1, 0, 0, 1, 0, 0);
@@ -639,6 +637,7 @@ header {
   background-repeat: no-repeat;
   background-size: 216px;
   background-position: right;
+  margin-top: 295%;
 }
 
 .contact_container h1 {
