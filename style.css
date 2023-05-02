@@ -627,9 +627,11 @@ header {
 .contact_container {
   display: flex;
   flex-direction: column;
+  position: absolute;
   width: 375px;
   height: 784px;
   left: 0;
+  top: 4470px;
   background: #6070ff;
   background-image: url(images/bg/contact\ form\ shapes-mobile@2x.png);
   transform: matrix(1, 0, 0, 1, 0, 0);
@@ -637,7 +639,6 @@ header {
   background-repeat: no-repeat;
   background-size: 216px;
   background-position: right;
-  margin-top: 295%;
 }
 
 .contact_container h1 {
@@ -761,7 +762,7 @@ form {
 .home_bar {
   width: 134px;
   height: 5px;
-  left: 110px;
+  left: 105px;
   background: #0d151e;
   border-radius: 10px;
   margin-top: 7.7%;
