@@ -125,12 +125,18 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   header {
     position: absolute;
-    width: 1440px;
+    width: 100%;
     top: 1px;
     background: #fff;
-    margin-left: 250px;
   }
 
   #logo {
@@ -140,15 +146,17 @@ header {
   }
 
   .header {
-    position: relative;
-    width: 1440px;
-    height: 718px;
-    margin-left: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 918px;
     background-color: #fff;
     background-image: url(images/bg/Header\ new\ bg.png);
     background-repeat: no-repeat;
-    background-size: 1260px;
-    background-position-x: 70px;
+    background-size: 1680px;
+    background-position-x: 150px;
+    background-position-y: 80px;
     border-bottom-left-radius: 60px;
   }
 
@@ -172,10 +180,10 @@ header {
   .header_container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
     padding: 0;
     gap: 12px;
-    position: absolute;
     width: 920px;
     height: 268px;
     left: 260px;
@@ -433,21 +441,17 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 142px;
     gap: 142px;
-    position: absolute;
-    width: 1440px;
-    height: 2694px;
-    left: 100px;
-    top: 750px;
+    margin-top: 142px;
   }
 
   .card_works {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 1156px;
-    height: 496px;
+    width: 1440px;
+    height: 700px;
+    gap: 100px;
     bottom: 0;
     background: #fff;
     border: 1px solid #dfe1e6;
@@ -455,29 +459,25 @@ header {
   }
 
   .card_left img {
-    width: 544px;
-    height: 448px;
-    top: 24px;
+    width: 790px;
+    height: 640px;
+    top: 30px;
+    margin-left: -1.2%;
   }
 
   .card_right {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 15px;
     width: 544px;
     height: 345px;
-    margin-top: -40px;
+    margin-top: -20%;
+    margin-left: -5%;
   }
 
   .card_right h2 {
-    width: 496px;
-    height: 50px;
     font-size: 40px;
-    line-height: 52px;
-    color: #091e42;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
   }
 
   .card_right img {
@@ -518,52 +518,40 @@ header {
   }
 
   .see_button {
-    left: 50.6%;
+    left: 57.3%;
     margin-top: 12%;
   }
 
   .see_button_nl {
-    left: 17.8%;
-    margin-top: 12%;
+    left: 14.5%;
+    margin-top: 8%;
   }
 
   .see_button_blue {
-    left: 50.6%;
+    left: 57.2%;
     margin-top: 12%;
   }
 
   .card_right_nl {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 15px;
     width: 544px;
     height: 345px;
     margin-top: -40px;
+    margin-left: 2%;
     order: -1;
   }
 
   .card_right_nl h2 {
-    width: 496px;
-    height: 50px;
     font-size: 40px;
-    line-height: 52px;
-    color: #091e42;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    margin-top: -25%;
   }
 
   .card_right_nl img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
     gap: 12px;
     width: 297px;
-    height: 40px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
   }
 
   .card_right_nl p {
@@ -583,11 +571,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 114px 24px;
   gap: 24px;
-  position: absolute;
-  width: 325px;
-  height: 1062.15px;
+  height: 1263px;
   top: 3330px;
   background: #fff;
   border-top-right-radius: 60px;
@@ -601,7 +586,7 @@ header {
   gap: 12px;
   width: 327px;
   height: 346px;
-  margin-top: 5px;
+  margin-top: 114px;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -715,11 +700,10 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 1440px;
+    width: 100%;
     height: 924px;
-    top: 3435px;
+    margin-top: 45px;
     background: #fff;
-    margin-left: 250px;
   }
 
   .about_text {
@@ -729,8 +713,8 @@ header {
     padding: 0;
     width: 447px;
     height: 311px;
-    margin-left: 8%;
-    margin-top: -38%;
+    margin-left: 20%;
+    margin-top: -18%;
   }
 
   .about_text h1 {
@@ -764,8 +748,8 @@ header {
     padding: 0;
     width: 684px;
     height: 360px;
-    margin-left: 100px;
-    margin-top: -32%;
+    margin-left: 110px;
+    margin-top: -12%;
   }
 
   .skill_list ul {
@@ -783,8 +767,8 @@ header {
     position: absolute;
     width: 98px;
     height: 24px;
-    margin-left: 41%;
-    top: 24%;
+    margin-left: 45.2%;
+    top: 4820px;
     display: flex;
   }
 
@@ -798,8 +782,8 @@ header {
     position: absolute;
     width: 98px;
     height: 24px;
-    margin-left: 50%;
-    top: 24%;
+    margin-left: 52.4%;
+    top: 4820px;
     display: flex;
   }
 
@@ -814,35 +798,35 @@ header {
     width: 98px;
     height: 24px;
     margin-left: 59.5%;
-    top: 24%;
+    top: 4820px;
     display: flex;
   }
 
   .down_arrow {
-    left: 90%;
+    left: 88%;
   }
 
   .right_arrow {
-    left: 90%;
+    left: 88%;
   }
 
   #frameworks .horizontal-line {
     display: flex;
-    width: 684px;
+    width: 760px;
     height: 1px;
-    left: 47%;
+    left: 49.8%;
   }
 
   #skills .horizontal-line {
     display: flex;
-    width: 684px;
+    width: 760px;
     height: 1px;
-    left: 47%;
+    left: 49.8%;
   }
 
   .get_resume {
-    left: 9.2%;
-    margin-top: 15%;
+    left: 19.9%;
+    margin-top: 12%;
   }
 }
 
@@ -1206,15 +1190,14 @@ form {
 
 @media only screen and (min-width: 768px) {
   .contact_container {
-    width: 1488px;
+    position: absolute;
+    width: 100%;
     height: 846px;
-    left: 0;
-    top: 4125px;
+    top: 5290px;
     background: #6070ff;
     background-image: url(images/bg/contact\ form\ background\ shapes@2x.png);
     background-repeat: no-repeat;
-    background-position: top 65% left 100px;
-    margin-left: 250px;
+    background-position: top 65% left 380px;
   }
 
   .contact_container form {
@@ -1222,8 +1205,8 @@ form {
     flex-direction: column;
     align-items: center;
     width: 447px;
-    margin-top: 10rem;
-    margin-left: 35%;
+    margin-top: 6rem;
+    margin-left: 38%;
     color: #172b4d;
   }
 
@@ -1242,8 +1225,14 @@ form {
     color: #172b4d;
   }
 
+  .contact_container textarea {
+    width: 447px;
+    height: 170px;
+  }
+
   .contact_container h1 {
-    margin-top: 2%;
+    margin-top: -2rem;
+    margin-bottom: 1%;
   }
 
   .contact_container p {
@@ -1252,8 +1241,8 @@ form {
     font-size: 20px;
     line-height: 28px;
     color: #ebebff;
-    margin-top: -32%;
-    margin-left: 30%;
+    margin-top: -30%;
+    margin-left: 35%;
     flex: none;
     order: 1;
     flex-grow: 0;
