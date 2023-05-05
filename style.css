@@ -420,6 +420,11 @@ img {
     max-width: 1440px;
     margin: 0 auto;
   }
+  
+  .container flex a {
+    transition: width 2s, height 2s, background-color 2s, rotate 2s;
+    rotate: 360deg;
+  }
 
   /* navbar */
   .navbar ul {
