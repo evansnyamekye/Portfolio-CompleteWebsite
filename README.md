@@ -67,10 +67,6 @@ In order to run this project you need:
 - Basic Knowledge of HTML and CSS
 - Basic Understanding of Linters
 
-### Online-Link (Complete website)
-
-- https://evansnyamekye.github.io/Portfolio-CompleteWebsite/
-
 ### Setup
 
 Clone this repository to your desired folder:
@@ -98,11 +94,14 @@ To run tests, run the following command:
 - npx stylelint "**/*.{css,scss}"
 - npx hint .
 
-### Deployment
+### Deployment (Porfolio website)
 
-You can deploy this project using:
+This project is deployed by using Github tools. 
 
-- Github tools
+### Online-Link (Complete website)
+
+- https://evansnyamekye.github.io/Portfolio-CompleteWebsite/
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
