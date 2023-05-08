@@ -47,8 +47,11 @@ a {
 }
 
 .flex a {
-  transition: width 2s, height 2s, background-color 2s, rotate 2s;
-  rotate: 360deg;
+  animation: mylogo 5s infinite;
+}
+
+@keyframes mylogo{
+  50% {transform: rotate(180deg);}
 }
 
 .social a:hover {
@@ -573,7 +576,6 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     /* padding: 10px 0; */
     border-bottom: 1px solid #dfe1e6;
   }
