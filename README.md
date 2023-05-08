@@ -58,7 +58,7 @@
 To get a local copy up and running, follow these steps:
 - Open your Terminal
 - Navigate to the desired directory[folder] to which you want to clone the repository to
-- [Copy & Paste] git clone https://github.com/evansnyamekye/Portfolio-MobileFirst.git
+- [Copy & Paste] git clone https://github.com/evansnyamekye/Portfolio-CompleteWebsite.git
 
 ### Prerequisites
 
@@ -71,12 +71,12 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-- git clone  https://github.com/evansnyamekye/Portfolio-MobileFirst.git
+- git clone  https://github.com/evansnyamekye/Portfolio-CompleteWebsite.git
 Example commands:
 
 ```sh
   cd my-folder
-  git clone  https://github.com/evansnyamekye/Portfolio-MobileFirst.git
+  git clone https://github.com/evansnyamekye/Portfolio-CompleteWebsite.git
 ```
 --->
 
@@ -111,7 +111,7 @@ To run the project, execute the following command by clonning to your machine:
 Example command:
 
 ```sh
-  git clone https://github.com/evansnyamekye/Portfolio-MobileFirst
+  git clone https://github.com/evansnyamekye/Portfolio-CompleteWebsite.git
 ```
 
 
@@ -170,7 +170,7 @@ If you like this project give this repository a 5 star rating.
 
 
 I would like to thank...
-- Microverse Review Team and specially nedjwab for professional review feedback
+- Microverse Review Team and specially Abel Gebeyehu for professional review feedback
 - My Coding Partners, wish I could mention your names. cheers!! to you all. 
 - I, Evans and my Family.
 
