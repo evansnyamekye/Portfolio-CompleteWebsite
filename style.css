@@ -47,10 +47,10 @@ a {
 }
 
 .flex a {
-  animation: mylogo 5s infinite;
+  animation: logo 5s infinite;
 }
 
-@keyframes mylogo{
+@keyframes logo{
   50% {transform: rotate(180deg);}
 }
 
