@@ -46,7 +46,6 @@ a {
   color: var(--primary-color);
 }
 
-
 .flex a {
   animation: logo 5s infinite;
 }
@@ -55,6 +54,12 @@ a {
   50% {
     transform: rotate(180deg);
   }
+}
+
+.mobile-nav li a {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
 }
 
 .social a:hover {
@@ -133,7 +138,7 @@ img {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color:  rgba(86, 102, 253, 0.85);
+  background-color: rgba(86, 102, 253, 0.85);
   backdrop-filter: blur(5px);
   padding: 50px;
   flex-direction: column;
@@ -152,12 +157,6 @@ img {
 
 .mobile-nav li {
   display: block;
-}
-
-.mobile-nav li a {
-  color: #fff; 
-  font-size: 32px;
-  font-weight: 500;
 }
 
 #close-menu {
@@ -607,7 +606,6 @@ img {
     padding: 0;
     margin: 0;
   }
-
   /* About section skills */
   .skills {
     margin-top: 0;
@@ -622,7 +620,6 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 10px 0; */
     border-bottom: 1px solid #dfe1e6;
   }
 
@@ -643,7 +640,6 @@ img {
     width: 100%;
     margin-top: 20px;
   }
-
   /* Contact form */
   .contact-white {
     background: #fff;
