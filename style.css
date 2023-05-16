@@ -606,6 +606,7 @@ img {
     padding: 0;
     margin: 0;
   }
+
   /* About section skills */
   .skills {
     margin-top: 0;
@@ -640,6 +641,7 @@ img {
     width: 100%;
     margin-top: 20px;
   }
+  
   /* Contact form */
   .contact-white {
     background: #fff;
