@@ -11,7 +11,7 @@
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
   <!-- Cascading Style Sheet -->
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -25,8 +25,14 @@
           <li><a href="index.html">About</a></li>
           <li><a href="index.html">Contact</a></li>
         </ul>
-        <i class="fa fa-bars"></i>
+        <i id="nav-open" class="fa fa-bars"></i>
       </div>
+        <ul class="mobile-nav" id="mobile-nav">
+          <i id="close-menu" class="fas fa-times"></i>
+          <li><a href="#portfolio" class="nav-link-close">Portfolio</a></li>
+          <li><a href="#about" class="nav-link-close">About</a></li>
+          <li><a href="#contact" class="nav-link-close">Contact</a></li>
+        </ul>
     </nav>
 
     <!-- start of banner -->
@@ -53,7 +59,7 @@
   <!-- End of banner [## Only Navigation-Section ##] -->
 
   <!--- Start of cards container -->
-  <section class="work">
+  <section class="work" id="portfolio">
     <div class="container">
       <div class="card">
         <div class="card-left">
@@ -149,7 +155,7 @@
   <!-- End of cards container -->
 
   <!-- start of About -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="about-text">
         <h1>About Myself</h1>
@@ -210,7 +216,7 @@
   <!-- End of About -->
 
   <!-- Start of Contact form -->
-  <section class="contact-white">
+  <section class="contact-white" id="contact">
     <div class="contact">
       <div class="container">
         <h1>Contact me</h1>
@@ -238,6 +244,8 @@
     </div>
   </section>
   <!-- End of Contact form -->
+  <script src="main.js"></script>
+
 </body>
 
 </html>
