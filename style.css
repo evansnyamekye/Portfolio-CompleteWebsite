@@ -559,6 +559,15 @@ img {
   font-family: "Poppins", sans-serif;
 }
 
+#validate {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0;
+  color: #ef152e;
+}
+
 @media only screen and (min-width: 768px) {
   img {
     width: 100%;
@@ -668,8 +677,6 @@ img {
     justify-content: start;
     background: #f7f7f9;
     border-radius: 8px;
-
-    /* width: 100%; */
     width: 122px;
     margin: 5px 0;
     margin-right: 10px;

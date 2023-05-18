@@ -4,6 +4,7 @@ const mobileNav = document.querySelector('#mobile-nav');
 const navLinkClose = document.querySelectorAll('.nav-link-close');
 const portfolioItems = document.querySelectorAll('.porfolio-items-detail');
 const wrapper = document.querySelector('.wrapper');
+const form = document.querySelector('#form');
 
 navOpen.addEventListener('click', () => {
   mobileNav.style.display = 'flex';
@@ -105,7 +106,7 @@ if (portfolioItems) {
               </ul>
                <img src="${portfolioItemsDetail[i].images}" alt="${portfolioItemsDetail[i].name}">
             <div class="flex-nl">
-              <p>${portfolioItemsDetail[i].text}</p>
+           
              
               <ul class="lang">
               <li><a href="#">HTML</a></li>
@@ -136,3 +137,19 @@ if (portfolioItems) {
     });
   });
 }
+
+// start of form validation
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  // validate the form fields
+  const email = document.querySelector('#email').value;
+
+  // check if name field is empty
+  if (email !== email.toLowerCase()) {
+    const errorDiv = document.querySelector('#validate');
+    errorDiv.innerText = '';
+  } else {
+    form.submit();
+  }
+});
