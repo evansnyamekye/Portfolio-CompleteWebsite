@@ -5,6 +5,9 @@ const navLinkClose = document.querySelectorAll('.nav-link-close');
 const portfolioItems = document.querySelectorAll('.porfolio-items-detail');
 const wrapper = document.querySelector('.wrapper');
 const form = document.querySelector('#form');
+const name = document.querySelector('#name');
+const email = document.querySelector('#email');
+const message = document.querySelector('#message');
 
 navOpen.addEventListener('click', () => {
   mobileNav.style.display = 'flex';
@@ -107,7 +110,6 @@ if (portfolioItems) {
                <img src="${portfolioItemsDetail[i].images}" alt="${portfolioItemsDetail[i].name}">
             <div class="flex-nl">
            
-             
               <ul class="lang">
               <li><a href="#">HTML</a></li>
               <li><a href="#">CSS</a></li>
@@ -137,6 +139,25 @@ if (portfolioItems) {
     });
   });
 }
+
+// save data in local-storage
+form.addEventListener('keyup', () => {
+  const formData = {
+    name: name.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+// receive data from local-storage
+window.onload = () => {
+  const formData = localStorage.getItem('formData');
+  const formDataObject = JSON.parse(formData);
+  name.value = formDataObject.name;
+  email.value = formDataObject.email;
+  message.value = formDataObject.message;
+};
 
 // start of form validation
 form.addEventListener('submit', (e) => {
