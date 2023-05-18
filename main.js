@@ -89,7 +89,6 @@ if (portfolioItems) {
         if (portfolioItemsDetail[i].id === idValue) {
           const popupPage = document.createElement('page');
           popupPage.classList.add('popup-page');
-          // console.log(porfolioItemsDetail[i].name);
           popupPage.innerHTML = `
           <div class="background"></div>
           <div class="card flex-main">
@@ -106,21 +105,20 @@ if (portfolioItems) {
                <img src="${portfolioItemsDetail[i].images}" alt="${portfolioItemsDetail[i].name}">
             <div class="flex-nl">
               <p>${portfolioItemsDetail[i].text}</p>
-             
               <ul class="lang">
               <li><a href="#">HTML</a></li>
               <li><a href="#">CSS</a></li>
               <li><a href="#">Javascript</a></li>
               </ul>
               <div class="border"></div>
-              </div>       
+              </div>
                <div class="link-button">
                 <button class="btn-default"><a href="${portfolioItemsDetail[i].live} class="see-btn">See live<img src="images/see-images/live.png" alt="live-link"/></a></button>
                 <button class="btn-default"><a href="${portfolioItemsDetail[i].source} class="see-btn">See source<img src="images/see-images/Vector.png" alt="live-link"/></a></button>
                </div>
-             
+
             </div>
-             
+
             </div>
           </div>
           </div>
