@@ -61,10 +61,6 @@ a {
   background: transparent;
 }
 
-.popup-page {
-  padding: 0;
-}
-
 .social a {
   margin-right: 10px;
   color: #505f79;
@@ -94,6 +90,19 @@ a {
     transform: rotate(180deg);
   }
 } */
+
+.link-button a {
+  width: 83px;
+  height: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #6070ff;
+}
 
 .mobile-nav li a {
   color: #fff;
@@ -132,12 +141,15 @@ img {
   padding: 20px;
 }
 
+.navbar ul {
+  display: none;
+}
 
 .flex-nl .lang-nl ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 8px;
   width: 214px;
   height: 24px;
@@ -155,7 +167,7 @@ img {
 }
 
 .border {
-  height: 0px;
+  height: 0;
   left: 4px;
   right: 4px;
   top: calc(50% - 0px / 2 - 0.5px);
@@ -168,19 +180,6 @@ img {
   justify-content: center;
   gap: 15px;
   order: 1;
-}
-
-.link-button a {
-  width: 83px;
-  height: 20px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  align-items: center;
-  text-align: center;
-  color: #6070ff;
 }
 
 .link-button a:hover {
@@ -225,10 +224,6 @@ img {
   position: fixed;
   z-index: 1;
   width: 100%;
-}
-
-.navbar ul {
-  display: none;
 }
 
 .mobile-nav {
@@ -601,6 +596,7 @@ img {
   .navbar .mobile-nav {
     display: none;
   }
+
   /* banner */
   .banner {
     position: static;
