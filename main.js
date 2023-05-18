@@ -27,7 +27,7 @@ window.onresize = () => {
   }
 };
 
-const porfolioItemsDetail = [
+const portfolioItemsDetail = [
   {
     id: '1',
     name: 'Tonic',
@@ -85,8 +85,8 @@ if (portfolioItems) {
   portfolioItems.forEach((cards) => {
     cards.addEventListener('click', (e) => {
       const idValue = e.target.closest('.card').id;
-      for (let i = 0; i < porfolioItemsDetail.length; i += 1) {
-        if (porfolioItemsDetail[i].id === idValue) {
+      for (let i = 0; i < portfolioItemsDetail.length; i += 1) {
+        if (portfolioItemsDetail[i].id === idValue) {
           const popupPage = document.createElement('page');
           popupPage.classList.add('popup-page');
           // console.log(porfolioItemsDetail[i].name);
@@ -97,15 +97,15 @@ if (portfolioItems) {
           <i class="fas fa-times"></i>
           </button>
           <div class="card-right">
-              <h2>${porfolioItemsDetail[i].name}</h2>
+              <h2>${portfolioItemsDetail[i].name}</h2>
               <ul class="cano">
-                <li>${porfolioItemsDetail[i].title}<i class="fa fa-circle"></i></li>
-                <li>${porfolioItemsDetail[i].stack}<i class="fa fa-circle"></i></li>
-                <li>${porfolioItemsDetail[i].year}</li>
+                <li>${portfolioItemsDetail[i].title}<i class="fa fa-circle"></i></li>
+                <li>${portfolioItemsDetail[i].stack}<i class="fa fa-circle"></i></li>
+                <li>${portfolioItemsDetail[i].year}</li>
               </ul>
-               <img src="${porfolioItemsDetail[i].images}" alt="${porfolioItemsDetail[i].name}">
+               <img src="${portfolioItemsDetail[i].images}" alt="${portfolioItemsDetail[i].name}">
             <div class="flex-nl">
-              <p>${porfolioItemsDetail[i].text}</p>
+              <p>${portfolioItemsDetail[i].text}</p>
              
               <ul class="lang">
               <li><a href="#">HTML</a></li>
@@ -115,8 +115,8 @@ if (portfolioItems) {
               <div class="border"></div>
               </div>       
                <div class="link-button">
-                <button class="btn-default"><a href="${porfolioItemsDetail[i].live} class="see-btn">See live<img src="images/see-images/live.png" alt="live-link"/></a></button>
-                <button class="btn-default"><a href="${porfolioItemsDetail[i].source} class="see-btn">See source<img src="images/see-images/Vector.png" alt="live-link"/></a></button>
+                <button class="btn-default"><a href="${portfolioItemsDetail[i].live} class="see-btn">See live<img src="images/see-images/live.png" alt="live-link"/></a></button>
+                <button class="btn-default"><a href="${portfolioItemsDetail[i].source} class="see-btn">See source<img src="images/see-images/Vector.png" alt="live-link"/></a></button>
                </div>
              
             </div>
