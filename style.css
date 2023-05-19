@@ -10,6 +10,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -657,6 +661,7 @@ p {
   .skills img {
     width: 48px;
     height: 48px;
+
   }
 
   .popup-page .snap-image,
