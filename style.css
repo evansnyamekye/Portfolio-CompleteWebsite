@@ -28,7 +28,7 @@ a {
 
 .popup-page {
   position: fixed;
-  top: 120px;
+  top: 180px;
   left: 0;
   height: 100vh;
   width: 100%;
@@ -36,6 +36,7 @@ a {
 
 .popup-page .background {
   position: fixed;
+  overflow-y: scroll;
   left: 0;
   right: 0;
   top: 0;
@@ -45,6 +46,7 @@ a {
 }
 
 .popup-page .card {
+  overflow-y: scroll;
   position: relative;
   margin-top: 50%;
   transform: translateY(-20%);
@@ -393,6 +395,7 @@ p {
   font-weight: 600;
   font-size: 13px;
   color: #7a869a;
+  margin-bottom: 8px;
 }
 
 .skills .skill li span i {
@@ -499,7 +502,7 @@ p {
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
-  margin-top: 0;
+  margin-top: 20px;
 }
 
 .skills .skill li span h2 {
@@ -644,10 +647,11 @@ p {
   }
 
   .popup-page .card {
+    overflow-y: scroll;
     width: 80%;
     display: flex;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 15%;
   }
 
   .skills img {
@@ -657,7 +661,7 @@ p {
 
   .popup-page .snap-image,
   .popup-page .snap-image img {
-    height: 360px;
+    height: 400px;
     backdrop-filter: blur(5px);
   }
 
@@ -726,6 +730,7 @@ p {
 
   .work .card .cano li {
     font-size: 18px;
+    margin-bottom: 8px;
   }
 
   .work .card p {

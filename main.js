@@ -96,7 +96,7 @@ if (portfolioItems) {
           // console.log(porfolioItemsDetail[i].name);
           popupPage.innerHTML = `
           <div class="background"></div>
-          <div class="card flex-main">
+          <div class="card ">
             <button class="close-btn" type="submit">
               <i class="fas fa-times"></i>
             </button>
