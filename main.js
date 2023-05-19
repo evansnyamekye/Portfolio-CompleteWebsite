@@ -103,25 +103,34 @@ if (portfolioItems) {
           <div class="card-right">
               <h2>${portfolioItemsDetail[i].name}</h2>
               <ul class="cano">
-                <li>${portfolioItemsDetail[i].title}<i class="fa fa-circle"></i></li>
-                <li>${portfolioItemsDetail[i].stack}<i class="fa fa-circle"></i></li>
+                <li>${
+  portfolioItemsDetail[i].title
+}<i class="fa fa-circle"></i></li>
+                <li>${
+  portfolioItemsDetail[i].stack
+}<i class="fa fa-circle"></i></li>
                 <li>${portfolioItemsDetail[i].year}</li>
               </ul>
-               <img src="${portfolioItemsDetail[i].images}" alt="${portfolioItemsDetail[i].name}">
+               <img src="${portfolioItemsDetail[i].images}" alt="${
+  portfolioItemsDetail[i].name
+}">
             <div class="flex-nl">
-           
               <ul class="lang">
-         ${portfolioItemsDetail[i].workStack.map((stack) => `<li>${stack}?</li>`).join('')}
+                ${portfolioItemsDetail[i].workStack
+    .map((stack) => `<li>${stack}?</li>`)
+    .join('')}
               </ul>
               <div class="border"></div>
               </div>       
                <div class="link-button">
-                <button class="btn-default"><a href="${portfolioItemsDetail[i].live} class="see-btn">See live<img src="images/see-images/live.png" alt="live-link"/></a></button>
-                <button class="btn-default"><a href="${portfolioItemsDetail[i].source} class="see-btn">See source<img src="images/see-images/Vector.png" alt="live-link"/></a></button>
+                <button class="btn-default"><a href="${
+  portfolioItemsDetail[i].live
+} class="see-btn">See live<img src="images/see-images/live.png" alt="live-link"/></a></button>
+                <button class="btn-default"><a href="${
+  portfolioItemsDetail[i].source
+} class="see-btn">See source<img src="images/see-images/Vector.png" alt="live-link"/></a></button>
                </div>
-             
             </div>
-             
             </div>
           </div>
           </div>
