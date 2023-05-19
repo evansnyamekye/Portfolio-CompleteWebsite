@@ -124,7 +124,6 @@ if (portfolioItems) {
                   </div>
 
               </div>
-              
             </div>
           </div>
           </div>
@@ -172,6 +171,7 @@ form.addEventListener('submit', (e) => {
   if (email !== email.toLowerCase()) {
     const errorDiv = document.querySelector('#validate');
     errorDiv.innerText = '';
+    errorDiv.innerText = 'Kindly type email address in lowercase';
   } else {
     form.submit();
   }
