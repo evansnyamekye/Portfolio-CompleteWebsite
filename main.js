@@ -111,9 +111,7 @@ if (portfolioItems) {
             <div class="flex-nl">
            
               <ul class="lang">
-              <li><a href="#">HTML</a></li>
-              <li><a href="#">CSS</a></li>
-              <li><a href="#">Javascript</a></li>
+         ${portfolioItemsDetail[i].workStack.map((stack) => `<li>${stack}?</li>`).join('')}
               </ul>
               <div class="border"></div>
               </div>       
