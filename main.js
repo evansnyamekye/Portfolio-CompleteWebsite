@@ -2,10 +2,11 @@ const navOpen = document.querySelector('#nav-open');
 const closeMenu = document.querySelector('#close-menu');
 const mobileNav = document.querySelector('#mobile-nav');
 const navLinkClose = document.querySelectorAll('.nav-link-close');
-const portfolioItems = document.querySelectorAll('.porfolio-items-detail');
+const portfolio = document.getElementById('portfolio');
+// const displayPortfolioDetails = document.getElementById('#portfolio');
 const wrapper = document.querySelector('.wrapper');
 const form = document.querySelector('#form');
-const label = document.querySelector('#name');
+const names = document.querySelector('#name');
 const email = document.querySelector('#email');
 const message = document.querySelector('#message');
 
@@ -33,7 +34,7 @@ navLinkClose.forEach((link) => {
 
 const portfolioItemsDetail = [
   {
-    id: '1',
+    id: '0',
     name: 'Tonic',
     year: '2015',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has, a galley of type and scrambled it 1960s. Lorem Ipsum is simplydummy text of the printing and typesetting industry.',
@@ -46,7 +47,7 @@ const portfolioItemsDetail = [
   },
 
   {
-    id: '2',
+    id: '1',
     name: 'Multi-Post Stories',
     year: '2015',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has, a galley of type and scrambled it 1960s. Lorem Ipsum is simplydummy text of the printing and typesetting industry.',
@@ -59,7 +60,7 @@ const portfolioItemsDetail = [
   },
 
   {
-    id: '3',
+    id: '2',
     name: 'Facebook 360',
     year: '2015',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has, a galley of type and scrambled it 1960s. Lorem Ipsum is simplydummy text of the printing and typesetting industry.',
@@ -72,7 +73,7 @@ const portfolioItemsDetail = [
   },
 
   {
-    id: '4',
+    id: '3',
     name: 'Uber Navigation',
     year: '2015',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has, a galley of type and scrambled it 1960s. Lorem Ipsum is simplydummy text of the printing and typesetting industry.',
@@ -85,6 +86,39 @@ const portfolioItemsDetail = [
   },
 ];
 
+if (portfolio) {
+  for (let i = 0; i < portfolioItemsDetail.length; i += 1) {
+    const div = document.createElement('div');
+    div.classList.add('card');
+    div.setAttribute('id', `${i}`);
+    div.innerHTML = `
+   <div class="card-left-mobile">
+   <img src="${portfolioItemsDetail[i].images}" alt="snap-card">
+   </div>
+   <div class="card-right">
+     <h2>${portfolioItemsDetail[i].name}</h2>
+     <ul class="cano">
+       <li>${portfolioItemsDetail[i].title}<i class="fa fa-circle"></i></li>
+       <li>${portfolioItemsDetail[i].stack}<i class="fa fa-circle"></i></li>
+       <li>2015</li>
+     </ul>
+     <p>${portfolioItemsDetail[i].text}</p>
+     <ul class="lang">
+       ${portfolioItemsDetail[i].workStack
+    .map((stack) => `<li>${stack}</li>`)
+    .join('')}
+     </ul>
+     <button class="btn-default portfolio-items-detail">See project</button>
+   </div>
+   <div class="card-left-desk">
+     <img src="${portfolioItemsDetail[i].images}" alt="snap-card">
+   </div>
+   `;
+    portfolio.appendChild(div);
+  }
+}
+
+const portfolioItems = document.querySelectorAll('.portfolio-items-detail');
 if (portfolioItems) {
   portfolioItems.forEach((cards) => {
     cards.addEventListener('click', (e) => {
@@ -96,7 +130,7 @@ if (portfolioItems) {
           // console.log(porfolioItemsDetail[i].name);
           popupPage.innerHTML = `
           <div class="background"></div>
-          <div class="card ">
+          <div class="card flex-main">
             <button class="close-btn" type="submit">
               <i class="fas fa-times"></i>
             </button>
@@ -124,10 +158,8 @@ if (portfolioItems) {
                   </div>
 
               </div>
+              
             </div>
-          </div>
-          </div>
-          </div>
           </div>
           `;
           wrapper.appendChild(popupPage);
@@ -142,9 +174,9 @@ if (portfolioItems) {
 }
 
 // save data in local-storage
-form.addEventListener('keyup', () => {
+form.addEventListener('submit', () => {
   const formData = {
-    name: label.value,
+    name: names.value,
     email: email.value,
     message: message.value,
   };
@@ -155,7 +187,7 @@ form.addEventListener('keyup', () => {
 window.onload = () => {
   const formData = localStorage.getItem('formData');
   const formDataObject = JSON.parse(formData);
-  label.value = formDataObject.name;
+  names.value = formDataObject.name;
   email.value = formDataObject.email;
   message.value = formDataObject.message;
 };
@@ -171,7 +203,6 @@ form.addEventListener('submit', (e) => {
   if (email !== email.toLowerCase()) {
     const errorDiv = document.querySelector('#validate');
     errorDiv.innerText = '';
-    errorDiv.innerText = 'Kindly type email address in lowercase';
   } else {
     form.submit();
   }

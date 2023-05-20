@@ -10,10 +10,6 @@
   margin: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -32,15 +28,15 @@ a {
 
 .popup-page {
   position: fixed;
-  top: 180px;
+  top: 120px;
   left: 0;
   height: 100vh;
   width: 100%;
+  z-index: 1;
 }
 
 .popup-page .background {
   position: fixed;
-  overflow-y: scroll;
   left: 0;
   right: 0;
   top: 0;
@@ -50,11 +46,11 @@ a {
 }
 
 .popup-page .card {
-  overflow-y: scroll;
   position: relative;
   margin-top: 50%;
   transform: translateY(-20%);
   width: 90%;
+
 }
 
 .popup-page .card .close-btn {
@@ -66,6 +62,7 @@ a {
   border: none;
   background: transparent;
 }
+
 
 .social a {
   margin-right: 10px;
@@ -352,8 +349,8 @@ p {
   background-color: #fff;
   border-radius: 16px;
   padding: 20px;
-  margin: 0 auto;
   width: 90%;
+  margin: 0 auto;
   margin-top: 104px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -399,7 +396,6 @@ p {
   font-weight: 600;
   font-size: 13px;
   color: #7a869a;
-  margin-bottom: 8px;
 }
 
 .skills .skill li span i {
@@ -478,6 +474,7 @@ p {
   border-top-right-radius: 60px;
   padding: 114px 0;
   width: 100%;
+  margin-top: 50px;
 }
 
 .about .btn-default {
@@ -506,7 +503,7 @@ p {
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 .skills .skill li span h2 {
@@ -595,6 +592,11 @@ p {
     width: 100%;
   }
 
+  /* .evans {
+    transition: width 2s, height 2s, background-color 2s, rotate 2s;
+    rotate: 360deg;
+  } */
+
   .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -651,11 +653,10 @@ p {
   }
 
   .popup-page .card {
-    overflow-y: scroll;
     width: 80%;
     display: flex;
     margin: 0 auto;
-    margin-top: 15%;
+    margin-top: 10%;
   }
 
   .skills img {
@@ -665,7 +666,7 @@ p {
 
   .popup-page .snap-image,
   .popup-page .snap-image img {
-    height: 400px;
+    height: 360px;
     backdrop-filter: blur(5px);
   }
 
@@ -734,7 +735,6 @@ p {
 
   .work .card .cano li {
     font-size: 18px;
-    margin-bottom: 8px;
   }
 
   .work .card p {
@@ -748,7 +748,7 @@ p {
 
   .popup-page {
     position: fixed;
-    top: 140px;
+    top: 120px;
     left: 0;
     height: 100vh;
     width: 100%;
