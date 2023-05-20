@@ -2,9 +2,13 @@ const navOpen = document.querySelector('#nav-open');
 const closeMenu = document.querySelector('#close-menu');
 const mobileNav = document.querySelector('#mobile-nav');
 const navLinkClose = document.querySelectorAll('.nav-link-close');
-const portfolioItems = document.querySelectorAll('.porfolio-items-detail');
+const portfolio = document.getElementById('portfolio');
+// const displayPortfolioDetails = document.getElementById('#portfolio');
 const wrapper = document.querySelector('.wrapper');
 const form = document.querySelector('#form');
+const names = document.querySelector('#name');
+const email = document.querySelector('#email');
+const message = document.querySelector('#message');
 
 navOpen.addEventListener('click', () => {
   mobileNav.style.display = 'flex';
@@ -22,15 +26,15 @@ navLinkClose.forEach((link) => {
   link.addEventListener('click', closeMobileNav);
 });
 
-window.onresize = () => {
-  if (window.innerWidth >= 768) {
-    closeMobileNav();
-  }
-};
+// window.onresize = () => {
+//   if (window.innerWidth >= 768) {
+//     closeMobileNav();
+//   }
+// };
 
 const portfolioItemsDetail = [
   {
-    id: '1',
+    id: '0',
     name: 'Tonic',
     year: '2015',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has, a galley of type and scrambled it 1960s. Lorem Ipsum is simplydummy text of the printing and typesetting industry.',
@@ -43,7 +47,7 @@ const portfolioItemsDetail = [
   },
 
   {
-    id: '2',
+    id: '1',
     name: 'Multi-Post Stories',
     year: '2015',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has, a galley of type and scrambled it 1960s. Lorem Ipsum is simplydummy text of the printing and typesetting industry.',
@@ -56,7 +60,7 @@ const portfolioItemsDetail = [
   },
 
   {
-    id: '3',
+    id: '2',
     name: 'Facebook 360',
     year: '2015',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has, a galley of type and scrambled it 1960s. Lorem Ipsum is simplydummy text of the printing and typesetting industry.',
@@ -69,7 +73,7 @@ const portfolioItemsDetail = [
   },
 
   {
-    id: '4',
+    id: '3',
     name: 'Uber Navigation',
     year: '2015',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has, a galley of type and scrambled it 1960s. Lorem Ipsum is simplydummy text of the printing and typesetting industry.',
@@ -82,6 +86,39 @@ const portfolioItemsDetail = [
   },
 ];
 
+if (portfolio) {
+  for (let i = 0; i < portfolioItemsDetail.length; i += 1) {
+    const div = document.createElement('div');
+    div.classList.add('card');
+    div.setAttribute('id', `${i}`);
+    div.innerHTML = `
+   <div class="card-left-mobile">
+   <img src="${portfolioItemsDetail[i].images}" alt="snap-card">
+   </div>
+   <div class="card-right">
+     <h2>${portfolioItemsDetail[i].name}</h2>
+     <ul class="cano">
+       <li>${portfolioItemsDetail[i].title}<i class="fa fa-circle"></i></li>
+       <li>${portfolioItemsDetail[i].stack}<i class="fa fa-circle"></i></li>
+       <li>2015</li>
+     </ul>
+     <p>${portfolioItemsDetail[i].text}</p>
+     <ul class="lang">
+       ${portfolioItemsDetail[i].workStack
+    .map((stack) => `<li>${stack}</li>`)
+    .join('')}
+     </ul>
+     <button class="btn-default portfolio-items-detail">See project</button>
+   </div>
+   <div class="card-left-desk">
+     <img src="${portfolioItemsDetail[i].images}" alt="snap-card">
+   </div>
+   `;
+    portfolio.appendChild(div);
+  }
+}
+
+const portfolioItems = document.querySelectorAll('.portfolio-items-detail');
 if (portfolioItems) {
   portfolioItems.forEach((cards) => {
     cards.addEventListener('click', (e) => {
@@ -94,37 +131,35 @@ if (portfolioItems) {
           popupPage.innerHTML = `
           <div class="background"></div>
           <div class="card flex-main">
-          <button class="close-btn" type="submit">
-          <i class="fas fa-times"></i>
-          </button>
-          <div class="card-right">
+            <button class="close-btn" type="submit">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="card-right">
               <h2>${portfolioItemsDetail[i].name}</h2>
               <ul class="cano">
                 <li>${portfolioItemsDetail[i].title}<i class="fa fa-circle"></i></li>
                 <li>${portfolioItemsDetail[i].stack}<i class="fa fa-circle"></i></li>
                 <li>${portfolioItemsDetail[i].year}</li>
               </ul>
-               <img src="${portfolioItemsDetail[i].images}" alt="${portfolioItemsDetail[i].name}">
-            <div class="flex-nl">
-
-
-              <ul class="lang">
-              <li><a href="#">HTML</a></li>
-              <li><a href="#">CSS</a></li>
-              <li><a href="#">Javascript</a></li>
-              </ul>
-              <div class="border"></div>
+              <div class="snap-image">
+                <img src="${portfolioItemsDetail[i].images}" alt="${portfolioItemsDetail[i].name}">
               </div>
-               <div class="link-button">
-                <button class="btn-default"><a href="${portfolioItemsDetail[i].live} class="see-btn">See live<img src="images/see-images/live.png" alt="live-link"/></a></button>
-                <button class="btn-default"><a href="${portfolioItemsDetail[i].source} class="see-btn">See source<img src="images/see-images/Vector.png" alt="live-link"/></a></button>
-               </div>
+              <div class="flex-nl">
+                <p>${portfolioItemsDetail[i].text}</p>
+             
+                <ul class="lang">
+                ${portfolioItemsDetail[i].workStack.map((stack) => `<li>${stack}</li>`).join('')}
+                </ul>
+                  <div class="link-button">
+                    <button class="btn-default"><a href="${portfolioItemsDetail[i].live} class=" see-btn">See live<img
+                    src="images/see-images/live.png" alt="live-link" /></a></button>
+                    <button class="btn-default"><a href="${portfolioItemsDetail[i].source} class=" see-btn">See source<img
+                    src="images/see-images/Vector.png" alt="live-link" /></a></button>
+                  </div>
 
+              </div>
+              
             </div>
-
-            </div>
-          </div>
-          </div>
           </div>
           `;
           wrapper.appendChild(popupPage);
@@ -138,6 +173,25 @@ if (portfolioItems) {
   });
 }
 
+// save data in local-storage
+form.addEventListener('submit', () => {
+  const formData = {
+    name: names.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+// receive data from local-storage
+window.onload = () => {
+  const formData = localStorage.getItem('formData');
+  const formDataObject = JSON.parse(formData);
+  names.value = formDataObject.name;
+  email.value = formDataObject.email;
+  message.value = formDataObject.message;
+};
+
 // start of form validation
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -148,7 +202,7 @@ form.addEventListener('submit', (e) => {
   // check if name field is empty
   if (email !== email.toLowerCase()) {
     const errorDiv = document.querySelector('#validate');
-    errorDiv.innerText = 'Kindly type email address in lowercase';
+    errorDiv.innerText = '';
   } else {
     form.submit();
   }
