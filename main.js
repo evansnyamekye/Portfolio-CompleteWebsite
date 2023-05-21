@@ -5,7 +5,7 @@ const navLinkClose = document.querySelectorAll('.nav-link-close');
 const portfolioItems = document.querySelectorAll('.porfolio-items-detail');
 const wrapper = document.querySelector('.wrapper');
 const form = document.querySelector('#form');
-const name = document.querySelector('#name');
+const names = document.querySelector('#name');
 const email = document.querySelector('#email');
 const message = document.querySelector('#message');
 
@@ -138,7 +138,7 @@ if (portfolioItems) {
 // save data in local-storage
 form.addEventListener('keyup', () => {
   const formData = {
-    name: name.value,
+    name: names.value,
     email: email.value,
     message: message.value,
   };
@@ -149,7 +149,7 @@ form.addEventListener('keyup', () => {
 window.onload = () => {
   const formData = localStorage.getItem('formData');
   const formDataObject = JSON.parse(formData);
-  name.value = formDataObject.name;
+  names.value = formDataObject.name;
   email.value = formDataObject.email;
   message.value = formDataObject.message;
 };
