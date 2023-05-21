@@ -85,7 +85,6 @@ const portfolioItemsDetail = [
     live: '#',
   },
 ];
-
 if (portfolio) {
   for (let i = 0; i < portfolioItemsDetail.length; i += 1) {
     const div = document.createElement('div');
@@ -117,7 +116,6 @@ if (portfolio) {
     portfolio.appendChild(div);
   }
 }
-
 const portfolioItems = document.querySelectorAll('.portfolio-items-detail');
 if (portfolioItems) {
   portfolioItems.forEach((cards) => {
@@ -145,20 +143,17 @@ if (portfolioItems) {
                 <img src="${portfolioItemsDetail[i].images}" alt="${portfolioItemsDetail[i].name}">
               </div>
               <div class="flex-nl">
-                <p>${portfolioItemsDetail[i].text}</p>
-             
+                <p>${portfolioItemsDetail[i].text}</p>  
                 <ul class="lang">
                 ${portfolioItemsDetail[i].workStack.map((stack) => `<li>${stack}</li>`).join('')}
                 </ul>
                   <div class="link-button">
-                    <button class="btn-default"><a href="${portfolioItemsDetail[i].live} class=" see-btn">See live<img
+                    <button class="btn-default"><a href="${portfolioItemsDetail[i].live} class="see-btn">See live<img
                     src="images/see-images/live.png" alt="live-link" /></a></button>
-                    <button class="btn-default"><a href="${portfolioItemsDetail[i].source} class=" see-btn">See source<img
+                    <button class="btn-default"><a href="${portfolioItemsDetail[i].source} class="see-btn">See source<img
                     src="images/see-images/Vector.png" alt="live-link" /></a></button>
                   </div>
-
               </div>
-              
             </div>
           </div>
           `;
@@ -172,9 +167,8 @@ if (portfolioItems) {
     });
   });
 }
-
 // save data in local-storage
-form.addEventListener('submit', () => {
+form.addEventListener('keyup', () => {
   const formData = {
     name: names.value,
     email: email.value,
@@ -182,7 +176,6 @@ form.addEventListener('submit', () => {
   };
   localStorage.setItem('formData', JSON.stringify(formData));
 });
-
 // receive data from local-storage
 window.onload = () => {
   const formData = localStorage.getItem('formData');
@@ -191,14 +184,11 @@ window.onload = () => {
   email.value = formDataObject.email;
   message.value = formDataObject.message;
 };
-
 // start of form validation
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-
   // validate the form fields
   const email = document.querySelector('#email').value;
-
   // check if name field is empty
   if (email !== email.toLowerCase()) {
     const errorDiv = document.querySelector('#validate');
