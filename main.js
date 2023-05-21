@@ -185,7 +185,7 @@ window.onload = () => {
   message.value = formDataObject.message;
 };
 // start of form validation
-form.addEventListener('submit', (e) => {
+form.addEventListener('key', (e) => {
   e.preventDefault();
   // validate the form fields
   const email = document.querySelector('#email').value;
